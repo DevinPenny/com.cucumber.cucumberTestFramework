@@ -8,14 +8,15 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class stepDefinitions {
 
+    WebDriver driver = null;
 
     @Given("I navigate to a page")
     public void navigateToPage() throws Throwable {
 
         System.out.println("Navigate to page");
 
-        WebDriver driver = new FirefoxDriver();
-        driver.get("www.google.com");
+        driver = new FirefoxDriver();
+        driver.navigate().to("www.google.com");
     }
 
     @When("I do something")
