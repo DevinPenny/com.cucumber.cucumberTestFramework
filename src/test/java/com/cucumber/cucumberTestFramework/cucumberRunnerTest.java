@@ -8,8 +8,11 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        features = "src/test/features"
+        plugin = {"pretty", "html:target/cucumber"},
+        features = "src/test/features/"
 )
 
 public class cucumberRunnerTest {
 }
+
+

@@ -10,7 +10,7 @@ public class stepDefinitions {
 
     WebDriver driver = null;
 
-    @Given("I navigate to a page")
+    @Given("^I navigate to a page$")
     public void navigateToPage() throws Throwable {
 
         System.out.println("Navigate to page");
@@ -19,14 +19,15 @@ public class stepDefinitions {
         driver.navigate().to("www.google.com");
     }
 
-    @When("I do something")
+    @When("^I do something$")
     public void enterLoginCredentials() throws Throwable {
         System.out.println("Enter login credentials");
 
     }
 
-    @Then("I should assert an expected result")
+    @Then("^I should assert an expected result$")
     public void verifyPageResult() throws Throwable {
         System.out.println("Verify behavior");
+        driver.quit();
     }
 }
