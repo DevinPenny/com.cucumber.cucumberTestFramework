@@ -58,14 +58,14 @@ public class exampleRestTest {
         //****** depending on the type of service and the data passed into it will determine if the response will be as a single object, or an array of objects
             
         //*** this returns an array and requires JSONArray(commented out)
-        //Response resp =given().cookie("PLAY_SESSION=\"53f8538dfc207b4d5d164d5c81b210d7528aeee1-LANGUAGE=0&lastUpdatedBy=5dJMVjYshGRz7hLgl4gGac9nq9r9hRjVn%2FtT3p6YIqI%3D&user=%7B%22email%22%3A%22%22%2C%22firstname%22%3A%22%22%2C%22lastname%22%3A%22%22%2C%22role%22%3A%22%22%2C%22isAdmin%22%3Afalse%2C%22isLogin%22%3Afalse%2C%22uid%22%3A%221%22%2C%22empEncryptId%22%3A%225dJMVjYshGRz7hLgl4gGac9nq9r9hRjVn%2FtT3p6YIqI%5Cu003d%22%2C%22encryptionSeed%22%3A%22401288B9CCC245B93100385EE1DB0DE6%22%7D\"").get("http://192.168.66.66:9090/service/terminals/typeaheadorigin/buf/customer/2");
+        //Response resp =given().cookie("PLAY_SESSION=\"53f%22%7D\"").get("http://192.168.66.66:9090/service/terminals/typeaheadorigin/buf/customer/2");
 
         //***this returns a single object not an array and requires JSONObject
             
             
             //need to send the play session as part of the request
             Response resp =given()
-                                    .cookie("PLAY_SESSION=\"53f8538dfc207b4d5d164d5c81b210d7528aeee1-LANGUAGE=0&lastUpdatedBy=5dJMVjYshGRz7hLgl4gGac9nq9r9hRjVn%2FtT3p6YIqI%3D&user=%7B%22email%22%3A%22%22%2C%22firstname%22%3A%22%22%2C%22lastname%22%3A%22%22%2C%22role%22%3A%22%22%2C%22isAdmin%22%3Afalse%2C%22isLogin%22%3Afalse%2C%22uid%22%3A%221%22%2C%22empEncryptId%22%3A%225dJMVjYshGRz7hLgl4gGac9nq9r9hRjVn%2FtT3p6YIqI%5Cu003d%22%2C%22encryptionSeed%22%3A%22401288B9CCC245B93100385EE1DB0DE6%22%7D\"")
+                                    .cookie("PLAY_SESSION=\"53f8536%22%7D\"")
                                     .get("http://192.168.66.66:9090/service/terminals/typeaheadorigin/buf/customer/7");
            
             //using an assert to verify the expected response was returned
