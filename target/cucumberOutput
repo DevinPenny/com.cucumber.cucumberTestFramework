@@ -1,0 +1,20 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "succesful log in with valid credentials",
+        "description": "\nGiven: I navigate to a page\nWhen: I do something\nThen: I should assert an expected result",
+        "id": "log-into-website;succesful-log-in-with-valid-credentials",
+        "type": "scenario",
+        "keyword": "Scenario"
+      }
+    ],
+    "name": "log into website",
+    "description": "",
+    "id": "log-into-website",
+    "keyword": "Feature",
+    "uri": "cucumberTest.feature"
+  }
+]

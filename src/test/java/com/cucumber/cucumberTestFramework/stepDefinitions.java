@@ -8,20 +8,20 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class stepDefinitions {
 
-    WebDriver driver = null;
+    public WebDriver driver = null;
 
     @Given("^I navigate to a page$")
     public void navigateToPage() throws Throwable {
 
-        System.out.println("Navigate to page");
+        System.out.println("Step 1");
 
-        driver = new FirefoxDriver();
-        driver.navigate().to("www.google.com");
+        this.driver = new FirefoxDriver();
+        driver.get("www.google.com");
     }
 
     @When("^I do something$")
     public void enterLoginCredentials() throws Throwable {
-        System.out.println("Enter login credentials");
+        System.out.println("Step 2");
 
     }
 
